@@ -56,6 +56,11 @@
   /* color: rgb(136, 127, 127); */
 }
 
+/* .banner-text h3 {
+  font-weight: bold;
+  color: white;
+} */
+
 .banner-text hr {
   border-top: 5px dotted white;
   width: 50%;
@@ -131,4 +136,12 @@
 .social-links i:hover {
   color: lightblue;
   transform: scale(1.1);
+}
+
+.projects-grid {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #0c0a0b;
 }

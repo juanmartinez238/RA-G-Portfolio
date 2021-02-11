@@ -14,7 +14,8 @@ const LandingPage = () => {
                 />
 
                 <div className='banner-text'>
-                    <h1>Full Stack Web Developer</h1>
+                    <h1>Juan Martinez</h1>
+                    {/* <h3>Full Stack Web Developer</h3> */}
                 <hr/>
                 <div className='line'></div>
 
