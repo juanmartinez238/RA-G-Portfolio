@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.landing-container {
+  width: 100%;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-color {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.mdl-layout__drawer-button i {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-grid {
+  background-image: url("./components/Assets/nightsky.png");
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.avatar-img {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  height: 250px;
+  padding: 0.2rem;
+  box-shadow: 10px 10px 15px white;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  /* color: rgb(136, 127, 127); */
+}
+
+.banner-text h3 {
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.line {
+  position: absolute;
+  width: 0.5px;
+  height: 50%;
+  right: 50%;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 75%,
+    #ffffff 100%
+  );
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+  animation-delay: 2s;
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    top: 110%;
   }
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-links i:hover {
+  color: lightblue;
+  transform: scale(1.1);
+}
+
+.category-tabs {
+  background: black;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.projects-grid {
+  color: #0c0a0b;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+.projects-grid a {
+  transition: all 0.2s ease-in-out;
+}
+
+.projects-grid a:hover {
+  transform: scale(1.1);
 }
