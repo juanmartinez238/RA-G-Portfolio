@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
     <Layout>
-        <Header className='header-color'title="Title" scroll>
+        <Header className='header-color'title="My Portfolio" scroll>
             <Navigation>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
@@ -16,7 +16,7 @@ function App() {
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="My Portfolio">
             <Navigation>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>

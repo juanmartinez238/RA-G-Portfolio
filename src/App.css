@@ -30,6 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 .avatar-img {
@@ -56,10 +57,10 @@
   /* color: rgb(136, 127, 127); */
 }
 
-/* .banner-text h3 {
+.banner-text h3 {
   font-weight: bold;
   color: white;
-} */
+}
 
 .banner-text hr {
   border-top: 5px dotted white;
@@ -72,6 +73,7 @@
   width: 0.5px;
   height: 50%;
   right: 50%;
+  top: 50%;
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -138,10 +140,46 @@
   transform: scale(1.1);
 }
 
+.category-tabs {
+  background: black;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
 .projects-grid {
-  margin-top: 2rem;
+  color: #0c0a0b;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  color: #0c0a0b;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+.projects-grid a {
+  transition: all 0.2s ease-in-out;
+}
+
+.projects-grid a:hover {
+  transform: scale(1.1);
 }

@@ -16,8 +16,10 @@ class Projects extends Component{
             return(
                 <div className='projects-grid'>
                 {/* Movie Station */}
-               <Card shadow={5} style={{height:'35vh',minWidth:'450', margin:'.7rem'}}>
+               <Card shadow={5} style={{height:'35vh',minWidth:'450', margin:'.7rem', borderRadius:'5%'}}>
+                   <a href='https://moviestation.herokuapp.com/' rel='noopener noreferrer' target='_blank'>
                    <CardTitle style={{color: '#fff', height: '200px', background: `url(${moviestation}) center / cover`}}>Movie Station</CardTitle>
+                   </a>
                    <CardText style={{height: '15vh'}}>
                    This application allows users to create an account where they can then log-in and out of in order to browse, search, and save their preferred newly released movies.
                    </CardText>
@@ -35,8 +37,10 @@ class Projects extends Component{
                </Card>
 
                 {/* News Web Scraper */}
-                <Card shadow={5} style={{height:'35vh',minWidth:'450', margin:'.7rem'}}>
+                <Card shadow={5} style={{height:'35vh',minWidth:'450', margin:'.7rem', borderRadius:'5%'}}>
+                <a href='https://github.com/juanmartinez238/news_scraping' rel='noopener noreferrer' target='_blank'>
                 <CardTitle style={{color: '#fff', height: '200px', background: `url(${news}) center / cover`}}>News-Web-Scraper</CardTitle>
+                </a>
                 <CardText style={{height: '15vh'}}>
                 This application collects articles in an automated fashion from Y combinator on 
 								the Hacker News Website that have 100 or more votes.
@@ -55,8 +59,10 @@ class Projects extends Component{
                 </Card>
 
                 {/* Game Station */}
-                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem'}}>
+                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem', borderRadius:'5%'}}>
+                <a href='https://juangamestation.herokuapp.com/' rel='noopener noreferrer' target='_blank'>
                 <CardTitle style={{color: '#fff', height: '200px', background: `url(${gamestation}) center / cover`}}>Game Landing Page</CardTitle>
+                </a>
                 <CardText style={{height: '15vh'}}>
                 Description: This is a landing page designed to attract the most enthusiastic of gamers. 
                 </CardText>
@@ -71,8 +77,10 @@ class Projects extends Component{
                 </Card>
 
                 {/* Movie Spree */}
-                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem'}}>
+                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem', borderRadius:'5%'}}>
+                <a href='https://dry-brook-68206.herokuapp.com/' rel='noopener noreferrer' target='_blank'>
                 <CardTitle style={{color: '#fff', height: '200px', background: `url(https://images.unsplash.com/photo-1577896849786-738ed6c78bd3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80) center / cover`}}>KJT Movie Spree</CardTitle>
+                </a>
                 <CardText style={{height: '15vh'}}>
                 Family entertainment app. The main Page
 				consists of a movie plot that the user would then need to guess in order to advance to the next round. 
@@ -89,12 +97,14 @@ class Projects extends Component{
                 </Card>
 
                 {/* Feeling Lonely */}
-                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem'}}>
+                <Card shadow={5} style={{height:'35vh', minWidth:'450', margin:'.7rem', borderRadius:'5%'}}>
+                <a href='https://github.com/juanmartinez238/feeling-lonely-chat' rel='noopener noreferrer' target='_blank'>
                 <CardTitle style={{color: '#0c0a0b', height: '200px', background: `url(${feelinglonely}) center / cover`}}>Feeling Lonely Chat</CardTitle>
+                </a>
                 <CardText style={{height: '15vh'}}>
                 This application is essentially a chatroom where the user can submit a message as "Me","Myself", or "I" to
 				themselves. If the user gets lonely, they can click the "feeling lonely" button to get a funny Chuck Norris
-				joke. 
+				joke.
                 
                 </CardText>
                 <CardActions border>
@@ -122,8 +132,8 @@ class Projects extends Component{
     render(){
         return(
             <div className='category-tabs'>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
-                   <Tab>React</Tab> 
+                <Tabs style={{color: '#fff'}} activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab:tabId})} ripple>
+                   <Tab style={{color: '#fff'}}>My Projects</Tab> 
                    {/* <Tab>Other</Tab> */}
                 </Tabs>
                     <Grid>
