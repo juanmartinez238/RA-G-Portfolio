@@ -183,3 +183,114 @@
 .projects-grid a:hover {
   transform: scale(1.1);
 }
+
+.about-container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+.about-grid {
+  background-color: black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.about-banner-text {
+  color: white;
+}
+
+.about-banner-text h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.about-banner-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+}
+
+.contact-page {
+  /* margin-top: 3rem; */
+}
+
+.contact-container {
+  /* padding: 3rem; */
+  display: flex;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+.contact-form {
+  background-color: #49423f;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-p-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+}
+
+.contact-email-label {
+  color: white;
+  padding: 0.5rem;
+}
+
+.contact-email {
+  height: 2rem;
+  width: 55vw;
+}
+
+.contact-message-label {
+  color: white;
+  padding: 0.5rem;
+}
+
+.contact-message {
+  height: 4rem;
+  width: 55vw;
+}
+
+.contact-button {
+  margin-top: 2rem;
+  width: 55vw;
+  border-radius: 80px;
+  background-color: rgb(10, 10, 114);
+  color: white;
+}
+
+.contact-thanks {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
