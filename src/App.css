@@ -152,6 +152,8 @@
 }
 
 .projects-grid {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: #0c0a0b;
   display: flex;
   justify-content: center;
@@ -161,8 +163,6 @@
   overflow: auto;
   background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
   color: #eee;
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,46 +183,6 @@
 
 .projects-grid a:hover {
   transform: scale(1.1);
-}
-
-.about-container {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: url("https://images.unsplash.com/photo-1599045150267-fd6137e00c7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80");
-  color: #eee;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-  animation: animation 100s linear infinite;
-}
-
-.about-grid {
-  background-color: black;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  border-radius: 20px;
-}
-
-.about-banner-text {
-  color: white;
-}
-
-.about-banner-text h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.about-banner-text p {
-  font-family: "Roboto", sans-serif;
-  font-size: large;
 }
 
 .contact-page {
