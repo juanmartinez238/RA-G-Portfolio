@@ -16,7 +16,6 @@ const Aboutme = () => {
                         {/* <h1>Juan Martinez</h1> */}
                         <h3>About Me</h3>
                     <hr/>
-                    <div className='line'></div>
 
                     <p>
                         I'm a United States military veteran that found a passion for coding

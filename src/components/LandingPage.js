@@ -12,17 +12,19 @@ const LandingPage = () => {
                 alt='avatar'
                 className='avatar-img'
                 />
-
+                <div className='lines'>
+                <div className='line'></div>
+                </div>
                 <div className='banner-text'>
                     <h1>Juan Martinez</h1>
-                    <h3>Full Stack Web Developer</h3>
+                    <h3>Web Developer</h3>
                 <hr/>
-                <div className='line'></div>
 
                 <p>HTML/CSS | JavaScript | C# | Microsoft SQL Server | MongoDB | ExpressJS | ReactJS | NodeJS</p>
-
+ 
                 </div>
 
+                
                 <div className='social-links'>
 
                 {/* LinkedIn link */}
@@ -34,6 +36,7 @@ const LandingPage = () => {
                 <a href='https://github.com/juanmartinez238' rel='noopener noreferrer' target='_blank'>
                 <i className="fa fa-github" aria-hidden="true"/>
                 </a>
+                
                 </div>
             </Cell>
         </Grid>
