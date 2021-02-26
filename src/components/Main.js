@@ -8,7 +8,7 @@ import Projects from './Projects';
 const Main = () => {
     return(
     <Switch>
-        <Route exact path='/' component={landingpage} />
+        <Route exact path='/RA-G-Portfolio/landing' component={landingpage} />
         <Route exact path='/aboutme' component={Aboutme} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/projects' component={Projects} />
